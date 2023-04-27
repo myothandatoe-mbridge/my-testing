@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TestingController extends Controller
+class TestingTwoController extends Controller
 {
     /**
     * Display a listing of the resource.
@@ -14,7 +14,6 @@ class TestingController extends Controller
     */
     public function index()
     {
-    	'foo';
-        return view('welcome');
+    	'bar';
     }
 }
