@@ -18,5 +18,5 @@ use App\Http\Controllers\TestingController;
 //     return view('welcome');
 // });
 
-Route::get('/', [TestingController::class, 'index']);
+Route::get('/', [TestingController::class, 'def']);
 Route::get('/', [TestingTwoController::class, 'index']);
