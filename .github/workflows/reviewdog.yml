@@ -13,7 +13,7 @@ jobs:
         with:
           reviewdog_version: latest
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2 
+        uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2.3' # 環境に合わせて変更
           tools: composer:v2
@@ -23,5 +23,5 @@ jobs:
       - name: Run PHPstan
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./src
+        working-directory: ./
         run: ./vendor/bin/phpstan analyse --error-format=raw --no-progress --memory-limit=1G | reviewdog -reporter=github-pr-review -f=phpstan
