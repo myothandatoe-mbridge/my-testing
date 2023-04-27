@@ -20,3 +20,4 @@ use App\Http\Controllers\TestingController;
 
 Route::get('/', [TestingController::class, 'index']);
 Route::get('/', [TestingTwoController::class, 'index']);
+Route::get('/', [TestingThreeController::class, 'index']);
