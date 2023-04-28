@@ -12,11 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Install Composer
-      working-directory: ./src
-      run: composer install
-      
+    
     - name: Run PhpStan
       working-directory: ./src
       run: vendor/bin/phpstan analyse app --error-format=github
