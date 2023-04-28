@@ -1,0 +1,24 @@
+
+
+<ruleset name="PSR2">
+    <description>PSR-2 coding standard</description>
+
+    <!-- 適用コーディング規約の指定 -->
+    <rule ref="PSR2">
+        <exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine"/>
+    </rule>
+
+
+    <!-- 出力に色を適用 -->
+    <arg name="colors" />
+
+    <!-- 除外ディレクトリ -->
+    <exclude-pattern>./bootstrap/*</exclude-pattern>
+    <exclude-pattern>./database/*</exclude-pattern>
+    <exclude-pattern>./node_modules/*</exclude-pattern>
+    <exclude-pattern>./public/*</exclude-pattern>
+    <exclude-pattern>./storage/*</exclude-pattern>
+    <exclude-pattern>./tests/*</exclude-pattern>
+    <exclude-pattern>./vendor/*</exclude-pattern>
+    <exclude-pattern>./config/*</exclude-pattern>
+</ruleset>
