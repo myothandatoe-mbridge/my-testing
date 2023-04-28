@@ -13,6 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Install Composer
+      working-directory: ./src
+      run: composer install
+    
     - name: Run PhpStan
       working-directory: ./src
-      run: vendor/bin/phpstan analyse app --error-format=github
+      run: vendor/bin/phpstan analyse -l 8 ./ --error-format=github --memory-limit=1G
