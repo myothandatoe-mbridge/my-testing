@@ -20,3 +20,7 @@ jobs:
     - name: Run PhpStan
       working-directory: ./src
       run: vendor/bin/phpstan analyse -l 8 app --error-format=github --memory-limit=1G
+
+    - name: Run PhpCodeSniffer
+      working-directory: ./src
+      run: vendor/bin/phpcs --standard=phpcs.xml ./
