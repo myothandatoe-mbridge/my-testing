@@ -23,4 +23,4 @@ jobs:
       
     - name: Run PhpStan
       working-directory: ./src
-      run: vendor/bin/phpstan analyse app
+      run: vendor/bin/phpstan analyse app --error-format=github
