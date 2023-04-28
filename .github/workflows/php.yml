@@ -20,3 +20,7 @@ jobs:
     - name: Install Composer
       working-directory: ./src
       run: composer install
+      
+    - name: Run PhpStan
+      working-directory: ./src
+      run: vendor/bin/phpstan analyse app
