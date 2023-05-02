@@ -12,7 +12,7 @@ class TestingTwoController extends Controller
     * @param  string  $post_type
     * @return \Illuminate\Http\Response
     */
-    public function index()
+    public function index_test()
     {
     	'bar';
     }
