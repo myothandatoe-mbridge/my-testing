@@ -14,6 +14,6 @@ class TestingTwoController extends Controller
     */
     public function index()
     {
-    	'bar';
+        'test-bar';
     }
 }
